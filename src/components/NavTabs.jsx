@@ -1,6 +1,7 @@
 function NavTabs({ currentPage, handlePageChange }) {
   return (
     <ul className="nav nav-tabs">
+      <a class="navbar-brand nav-item">Josue Feliciano</a>
       <li className="nav-item">
         <a
           href="#aboutme"

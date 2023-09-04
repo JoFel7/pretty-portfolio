@@ -14,13 +14,13 @@ export default function PortfolioContainer() {
     if (currentPage === "Portfolio") {
       return <Portfolio />;
     }
-    if (currentPage === "About") {
+    if (currentPage === "AboutMe") {
       return <AboutMe />;
     }
     if (currentPage === "Resume") {
       return <Resume />;
     }
-    // If 'currentPage' is not 'Portfolio', 'About', or 'Resume', it defaults to rendering the 'Contact' page.
+    // If 'currentPage' is not 'Portfolio', 'AboutMe', or 'Resume', it defaults to rendering the 'Contact' page.
     return <Contact />;
   };
 
@@ -32,7 +32,7 @@ export default function PortfolioContainer() {
       {/* We are passing 'currentPage' and 'handlePageChange' as props to the 'NavTabs' component.
         'currentPage' informs the component about the currently selected page,
         and 'handlePageChange' provides a way for the component to update the 'currentPage' state. */}
-      <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
+      <NavTabs currentPage={currentPage} handlePageChange={handlePageChange}/>
 
       {/* Inside the 'main' element, the 'renderPage' function is called to display the content
          of the currently selected page based on the 'currentPage' state. */}
