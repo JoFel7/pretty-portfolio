@@ -3,35 +3,24 @@ function NavTabs({ currentPage, handlePageChange }) {
     <ul className="nav nav-tabs">
       <li className="nav-item">
         <a
-          href="#home"
-          onClick={() => handlePageChange('Home')}
-          // This code checks if the current page is 'Home'.
+          href="#aboutme"
+          onClick={() => handlePageChange('AboutMe')}
+          // This code checks if the current page is 'AboutMe'.
           // If it is, it assigns the 'active' class to make the tab look active.
-          className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'}
+          className={currentPage === 'AboutMe' ? 'nav-link active' : 'nav-link'}
         >
-          Home
+          About me
         </a>
       </li>
       <li className="nav-item">
         <a
-          href="#about"
-          onClick={() => handlePageChange('About')}
-          // This code checks if the current page is 'About'.
+          href="#portfolio"
+          onClick={() => handlePageChange('Portfolio')}
+          // This code checks if the current page is 'Portfolio'.
           // If it is, it assigns the 'active' class to make the tab look active.
-          className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
+          className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}
         >
-          About
-        </a>
-      </li>
-      <li className="nav-item">
-        <a
-          href="#resume"
-          onClick={() => handlePageChange('Resume')}
-           // This code checks if the current page is 'Resume'.
-          // If it is, it assigns the 'active' class to make the tab look active.
-          className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
-        >
-          Resume
+          Portfolio
         </a>
       </li>
       <li className="nav-item">
@@ -43,6 +32,17 @@ function NavTabs({ currentPage, handlePageChange }) {
           className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
         >
           Contact
+        </a>
+      </li>
+      <li className="nav-item">
+        <a
+          href="#resume"
+          onClick={() => handlePageChange('Resume')}
+           // This code checks if the current page is 'Resume'.
+          // If it is, it assigns the 'active' class to make the tab look active.
+          className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
+        >
+          Resume
         </a>
       </li>
     </ul>
