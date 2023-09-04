@@ -25,13 +25,13 @@ function NavTabs({ currentPage, handlePageChange }) {
       </li>
       <li className="nav-item">
         <a
-          href="#blog"
-          onClick={() => handlePageChange('Blog')}
-           // This code checks if the current page is 'Blog'.
+          href="#resume"
+          onClick={() => handlePageChange('Resume')}
+           // This code checks if the current page is 'Resume'.
           // If it is, it assigns the 'active' class to make the tab look active.
-          className={currentPage === 'Blog' ? 'nav-link active' : 'nav-link'}
+          className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
         >
-          Blog
+          Resume
         </a>
       </li>
       <li className="nav-item">
