@@ -2,7 +2,7 @@ import { useState } from "react";
 import NavTabs from "./NavTabs";
 import Portfolio from "./pages/Portfolio";
 import AboutMe from "./pages/About";
-import Contact from "./pages/Contact";
+import Form from "./pages/Contact";
 import Resume from "./pages/Resume";
 
 export default function PortfolioContainer() {
@@ -21,7 +21,7 @@ export default function PortfolioContainer() {
       return <Resume />;
     }
     // If 'currentPage' is not 'Portfolio', 'AboutMe', or 'Resume', it defaults to rendering the 'Contact' page.
-    return <Contact />;
+    return <Form />;
   };
 
   // This function 'handlePageChange' is used to update the 'currentPage' state when a navigation tab is clicked.

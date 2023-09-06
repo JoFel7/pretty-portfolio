@@ -29,8 +29,8 @@ function NavTabs({ currentPage, handlePageChange }) {
           href="#contact"
           // This code checks if the current page is 'Contact'.
           // If it is, it assigns the 'active' class to make the tab look active.
-          onClick={() => handlePageChange('Contact')}
-          className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
+          onClick={() => handlePageChange('Form')}
+          className={currentPage === 'Form' ? 'nav-link active' : 'nav-link'}
         >
           Contact
         </a>
