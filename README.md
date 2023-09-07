@@ -5,7 +5,7 @@
 
 This is my personal portfolio website built using React. It serves as a showcase of my skills, projects, and experiences as a developer.
 
-![Portfolio Screenshot](screenshot.png)
+![Portfolio Screenshot](./assets/josue-feliciano-portfolio.netlify.app_.png)
 
 ## Features
 
